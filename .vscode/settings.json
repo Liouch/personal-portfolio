@@ -1,0 +1,7 @@
+{
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
