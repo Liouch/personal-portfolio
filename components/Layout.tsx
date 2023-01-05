@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import NavBar from './NavBar';
 
 export type LayoutProps = {
   children: React.ReactNode;
   home?: boolean;
 };
 
-const Layout = ({ children, home }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
@@ -19,6 +20,9 @@ const Layout = ({ children, home }: LayoutProps) => {
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
+      <header>
+        <NavBar />
+      </header>
       <main className='w-4/5 md:w-3/5 mx-auto mt-10'>{children}</main>
     </>
   );
