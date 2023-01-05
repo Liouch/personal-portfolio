@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
@@ -23,7 +24,7 @@ const NavBarItem = ({ url, children }: NavBarItemProps) => {
 
 const NavBar = () => {
   const [theme, setTheme] = useState<string>('light');
-
+  const router = useRouter();
   const toggleTheme = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     setTheme((theme) => (theme === 'light' ? 'dark' : 'light'));
@@ -36,11 +37,21 @@ const NavBar = () => {
           <span>Liou Wang</span>
         </NavBarItem>
         <div className='flex items-center'>
-          {NAVBAR_ITEMS.map((item) => (
-            <NavBarItem url={item.url} key={item.url}>
-              <span className='mr-3'>{item.title}</span>
-            </NavBarItem>
-          ))}
+          {NAVBAR_ITEMS.map((item) => {
+            const activeLink = router.asPath === item.url ? 'font-bold' : '';
+            return (
+              <NavBarItem url={item.url} key={item.title}>
+                <span
+                  className={`relative mr-3 ${activeLink} before:content-[''] before:absolute before:-z-10
+                  before:bottom-0 before:left-0 before:right-0 before:scale-x-0 
+                  before:border-b-4 before:border-b-[var(--feather)] before:origin-[center_right]
+                  before:transition-transform before:ease-in before:duration-200 hover:before:scale-x-100 hover:before:origin-[center_left]`}
+                >
+                  {item.title}
+                </span>
+              </NavBarItem>
+            );
+          })}
           <button onClick={toggleTheme}>
             {theme === 'light' ? <FiMoon /> : <FiSun />}
           </button>
