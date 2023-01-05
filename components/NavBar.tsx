@@ -44,7 +44,7 @@ const NavBar = () => {
                 <span
                   className={`relative mr-3 ${activeLink} before:content-[''] before:absolute before:-z-10
                   before:bottom-0 before:left-0 before:right-0 before:scale-x-0 
-                  before:border-b-4 before:border-b-[var(--feather)] before:origin-[center_right]
+                  before:border-b-4 dark:before:border-b-[var(--marine)] before:border-b-[var(--feather)] before:origin-[center_right]
                   before:transition-transform before:ease-in before:duration-200 hover:before:scale-x-100 hover:before:origin-[center_left]`}
                 >
                   {item.title}
