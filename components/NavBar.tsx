@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
-import { FiMoon, FiSun } from 'react-icons/fi';
+import React from 'react';
+import ThemeToggler from './ThemeToggler';
 
 export type NavBarItemProps = {
   url: string;
@@ -23,12 +23,7 @@ const NavBarItem = ({ url, children }: NavBarItemProps) => {
 };
 
 const NavBar = () => {
-  const [theme, setTheme] = useState<string>('light');
   const router = useRouter();
-  const toggleTheme = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.preventDefault();
-    setTheme((theme) => (theme === 'light' ? 'dark' : 'light'));
-  };
 
   return (
     <nav className='sticky h-20 w-full shadow-md shadow-gray-300'>
@@ -52,9 +47,7 @@ const NavBar = () => {
               </NavBarItem>
             );
           })}
-          <button onClick={toggleTheme}>
-            {theme === 'light' ? <FiMoon /> : <FiSun />}
-          </button>
+          <ThemeToggler />
         </div>
       </div>
     </nav>
