@@ -54,6 +54,20 @@ body {
 html.dark body {
   @apply bg-[var(--bg-color)];
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl py-2.5 ;
+}
+h2 {
+  @apply text-3xl sm:text-4xl py-3.5;
+}
 a {
   color: inherit;
   text-decoration: none;

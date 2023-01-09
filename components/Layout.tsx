@@ -11,7 +11,6 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Head>
         <link rel='icon' href='/favicon.ico' />
-        {/* Move Title out*/}
         <meta name='og:title' content='Liou Wang - Front-end Developer' />
         <title>Liou Wang - Front-end Developer</title>
         <meta
