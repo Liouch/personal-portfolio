@@ -36,7 +36,7 @@ const SocialNetworkIcon = ({
         href={ICON_URL_LIST[socialNetwork]}
         target='_blank'
         rel='noreferrer'
-        className='rounded-full shadow-md shadow-gray-400 p-3 hover:scale-110 ease-in duration-500'
+        className='rounded-full hover:border-[var(--feather)] border-2 p-3 transition-transform hover:scale-110 ease-in duration-200'
       >
         <IconComponent size={ICON_SIZE[size]} />
       </a>

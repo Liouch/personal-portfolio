@@ -21,13 +21,15 @@ export default function Home() {
               className='rounded-full border-solid border-4 border-[var(--feather)]'
             />
           </div>
-          <section className='mt-6 sm:mt-10'>
+          <section className='mt-6 sm:mt-10 text-center'>
             <h1>Liou Wang</h1>
-            <p>
-              I&apos;m a front-end developer speciliazed in React / Next /
-              TypeScript based in Málaga, Spain. Always learning and improving.
-              Never let the comfort zone ruin you.
-            </p>
+            <div className='my-4'>
+              <p>
+                I&apos;m a front-end developer speciliazed in React / Next /
+                TypeScript based in Málaga, Spain. Always learning and
+                improving. Never let the comfort zone ruin you.
+              </p>
+            </div>
           </section>
           <SocialNetworkInfo className='flex items-center justify-evenly max-w-xs sm:max-w-sm md:max-w-md mx-auto py-4' />
         </div>

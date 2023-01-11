@@ -37,9 +37,9 @@ const ProjectLink = ({ url, type }: ProjectLinkProps) => {
       href={url}
       target='_blank'
       rel='noreferrer'
-      className='rounded-md py-2 px-4 min-h-[2.25rem] text-center bg-[var(--color-gray-light)] hover:bg-[var(--feather)] hover:text-white dark:hover:text-black transition-[background-color] duration-200 ease-in'
+      className='rounded-md py-2 px-4 min-h-[2.25rem] w-full lg:w-auto text-center bg-[var(--color-gray-light)] dark:bg-white hover:bg-[var(--feather)] dark:hover:bg-[var(--feather)] dark:text-black hover:text-white dark:hover:text-white  transition-[background-color] dark:transition-[background-color] duration-200 ease-in'
     >
-      <span className='flex items-center flex-nowrap'>
+      <span className='flex items-center flex-nowrap justify-center lg:justify-start'>
         {icon} {text}
       </span>
     </a>
@@ -49,9 +49,9 @@ const ProjectLink = ({ url, type }: ProjectLinkProps) => {
 const ProjectCard = (props: ProjectCardProps) => {
   const { title, description, skills, img, links } = props.info;
   return (
-    <div className='border-solid border-[2px] hover:border-2 border-[var(--color-gray-light)] hover:border-[var(--marine)] bg-white dark:bg-black rounded-lg shadow-sm mb-3'>
+    <div className='border-solid border-[2px] hover:border-2 border-[var(--color-gray-light)] hover:border-[var(--marine)] bg-white dark:bg-slate-900 rounded-lg shadow-sm mb-3'>
       <section className='flex flex-col p-6'>
-        <div className='flex'>
+        <div className='flex mb-2 sm:mb-0'>
           <div className='basis-4/4 lg:basis-3/4 pr-4'>
             <h3>{title}</h3>
             <p>{description}</p>
@@ -72,7 +72,7 @@ const ProjectCard = (props: ProjectCardProps) => {
           </div>
         </div>
         <footer>
-          <div className='flex gap-2 items-center'>
+          <div className='flex w-3/4 md:w-2/4 lg:w-full gap-2 items-center flex-wrap mx-auto'>
             {links.map((link) => (
               <ProjectLink url={link.url} type={link.type} key={link.url} />
             ))}
