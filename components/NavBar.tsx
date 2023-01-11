@@ -26,7 +26,7 @@ const NavBar = () => {
   const router = useRouter();
 
   return (
-    <nav className='sticky h-20 w-full shadow-md shadow-gray-300'>
+    <nav className='sticky h-20 w-full shadow-md shadow-gray-300 dark:shadow-gray-500'>
       <div className='flex justify-between items-center w-full h-full px-8 md:px-20'>
         <NavBarItem url='/'>
           <span>Liou Wang</span>

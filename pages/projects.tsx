@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Layout>
       <h2>Projects I&apos;ve built</h2>
-      <div className='mb-20'>
+      <div className='mb-10 lg:mb-20'>
         {projectList.map((project) => (
           <ProjectCard key={project.title} info={project} />
         ))}
