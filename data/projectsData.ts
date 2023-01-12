@@ -1,6 +1,8 @@
 import { StaticImageData } from 'next/image';
 import ReactMovie from '../public/React_movie.png';
 import ReactTodo from '../public/React_ToDo.png';
+import NoImage from '../public/no_image.jpeg';
+import Portfolio from '../public/Portfolio.png';
 
 export type ProjectInfo = {
   title: string;
@@ -19,14 +21,14 @@ export const projectList: ProjectInfo[] = [
     description:
       'My personal portfolio to introduce myself and show the projects I build in my spare time to learn about new technologies.',
     skills: 'Next JS, React JS, Tailwind, Responsive design',
-    img: ReactMovie,
+    img: Portfolio,
     links: [
       {
-        url: 'https://elegant-react-movie-database.netlify.app/76600',
+        url: 'https://liou-wang.vercel.app/',
         type: 'external',
       },
       {
-        url: 'https://github.com/Liouch/react-movie-database',
+        url: 'https://github.com/Liouch/personal-portfolio',
         type: 'github',
       },
     ],
@@ -40,7 +42,7 @@ export const projectList: ProjectInfo[] = [
     img: ReactMovie,
     links: [
       {
-        url: 'https://elegant-react-movie-database.netlify.app/76600',
+        url: 'https://elegant-react-movie-database.netlify.app/',
         type: 'external',
       },
       {
@@ -68,11 +70,11 @@ export const projectList: ProjectInfo[] = [
     ],
   },
   {
-    title: 'Social Media App',
+    title: 'Social Media App (Fullstack)',
     description:
       'Social media App built in React JS, TypeScript and GraphQL, using MongoDB for the database and Node for the server.',
     skills: 'React JS, TypeScript, React router, GraphQL, Node, MongoDB, ',
-    img: ReactTodo,
+    img: NoImage,
     links: [
       {
         url: 'https://github.com/Liouch/Social-media-app',

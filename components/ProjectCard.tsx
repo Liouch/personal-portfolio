@@ -60,13 +60,12 @@ const ProjectCard = (props: ProjectCardProps) => {
               {skills}
             </p>
           </div>
-          <div className='hidden lg:block lg:basis-1/4 mt-4'>
+          <div className='hidden lg:block lg:basis-1/4 mt-4 max-h-[131px] overflow-clip rounded-md'>
             <Image
               src={img}
               width='336'
-              height='210'
+              height='131'
               alt='Project'
-              className='rounded-md'
               placeholder='blur'
             />
           </div>
