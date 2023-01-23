@@ -4,10 +4,9 @@ import NavBar from './NavBar';
 
 type Props = {
   children: React.ReactNode;
-  home?: boolean;
 };
 
-const Layout = ({ children, home }: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
       <Head>
