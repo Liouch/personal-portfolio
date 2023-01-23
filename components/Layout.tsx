@@ -3,7 +3,6 @@ import NavBar from './NavBar';
 
 export type LayoutProps = {
   children: React.ReactNode;
-  home?: boolean;
 };
 
 const Layout = ({ children }: LayoutProps) => {
