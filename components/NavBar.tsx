@@ -16,6 +16,10 @@ export const NAVBAR_ITEMS = [
     title: 'Projects',
     url: '/projects',
   },
+  {
+    title: 'Experience',
+    url: '/experience',
+  },
 ];
 
 const NavBarItem = ({ url, children }: NavBarItemProps) => {
@@ -27,10 +31,12 @@ const NavBar = () => {
 
   return (
     <nav className='sticky h-20 w-full shadow-md shadow-gray-300 dark:shadow-gray-500'>
-      <div className='flex justify-between items-center w-full h-full px-8 md:px-20'>
-        <NavBarItem url='/'>
-          <span>Liou Wang</span>
-        </NavBarItem>
+      <div className='flex justify-between items-center w-full h-full px-8 md:px-20 gap-10'>
+        <div className='text-center'>
+          <NavBarItem url='/'>
+            <span>Liou Wang</span>
+          </NavBarItem>
+        </div>
         <div className='flex items-center'>
           {NAVBAR_ITEMS.map((item) => {
             const activeLink = router.asPath === item.url ? 'font-bold' : '';
