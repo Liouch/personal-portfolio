@@ -3,6 +3,7 @@ import ReactMovie from '../public/React_movie.png';
 import ReactTodo from '../public/React_ToDo.png';
 import NoImage from '../public/no_image.jpeg';
 import Portfolio from '../public/Portfolio.png';
+import SaveLinkChromeExtension from '../public/Save_Link_Chrome_Extension.png';
 
 export type ProjectInfo = {
   title: string;
@@ -16,6 +17,19 @@ export type ProjectInfo = {
 };
 
 export const projectList: ProjectInfo[] = [
+  {
+    title: 'Save link chrome extension',
+    description:
+      "This Chrome extension allows users to save and remove bookmarks, storing them in a JSON file hosted on JSONBin.io. The extension does not store any data itself; instead, it uses Chrome's local storage to persist the API key and database URL for accessing JSONBin.io. I created this extension to make bookmark management seamless across different devices. By saving bookmarks to JSONBin, I can easily retrieve them on my personal website/portfolio, enabling quick access to saved links from anywhere.",
+    skills: 'Javascript, Typescript, HTML, CSS, Chrome API, Rollup',
+    img: SaveLinkChromeExtension,
+    links: [
+      {
+        url: 'https://github.com/Liouch/save-link-chrome-extension',
+        type: 'github',
+      },
+    ],
+  },
   {
     title: 'Personal portfolio',
     description:
