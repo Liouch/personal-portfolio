@@ -61,7 +61,7 @@ h6 {
   @apply font-bold;
 }
 h1 {
-  @apply text-4xl sm:text-5xl md:text-6xl py-2.5 ;
+  @apply text-4xl sm:text-5xl md:text-6xl py-2.5;
 }
 h2 {
   @apply text-3xl sm:text-4xl py-3.5;
@@ -77,5 +77,24 @@ a {
   }
   body {
     @apply bg-[var(--bg-color)];
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .fading-box {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 }

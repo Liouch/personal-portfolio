@@ -1,5 +1,12 @@
 import { StaticImageData } from 'next/image';
 
+export type Bookmark = {
+  title: string;
+  url: string;
+  createdAt: string;
+  favIconURL: string;
+};
+
 export type ExperienceInfo = {
   id: number;
   title: string;
