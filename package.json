@@ -1,7 +1,13 @@
 {
   "name": "nextjs-lw-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
+  "private": false,
+  "author": {
+    "name": "Liou Wang",
+    "email": "liou.wang.it@gmail.com",
+    "url": "https://github.com/Liouch"
+  },
+  "description": "A portfolio website built with Next.js and Tailwind CSS.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
