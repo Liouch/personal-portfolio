@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { ExperienceInfo } from '../data/experienceData';
 import { IoLocationSharp } from 'react-icons/io5';
 import { BsArrowUpRightSquareFill } from 'react-icons/bs';
 import { AccordionContext, useAccordion } from '../hooks/useAccordion';
+import { ExperienceInfo } from '../types/types';
 
 export type AccordionProps = {
   items: ExperienceInfo[];

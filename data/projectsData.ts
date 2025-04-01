@@ -1,20 +1,9 @@
-import { StaticImageData } from 'next/image';
 import ReactMovie from '../public/React_movie.png';
 import ReactTodo from '../public/React_ToDo.png';
 import NoImage from '../public/no_image.jpeg';
 import Portfolio from '../public/Portfolio.png';
 import SaveLinkChromeExtension from '../public/Save_Link_Chrome_Extension.png';
-
-export type ProjectInfo = {
-  title: string;
-  description: string;
-  skills: string;
-  img: StaticImageData;
-  links: {
-    url: string;
-    type: 'external' | 'github';
-  }[];
-};
+import { ProjectInfo } from '../types/types';
 
 export const projectList: ProjectInfo[] = [
   {

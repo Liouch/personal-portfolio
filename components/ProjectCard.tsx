@@ -3,7 +3,7 @@ import React from 'react';
 import { AiFillCaretRight } from 'react-icons/ai';
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
-import { ProjectInfo } from '../data/projectsData';
+import { ProjectInfo } from '../types/types';
 
 export type ProjectCardProps = {
   info: ProjectInfo;
